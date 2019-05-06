@@ -4,7 +4,7 @@ void inputarray(int *a,int num)
 {
   int i;
   for(i=0;i<num;i++)
-  scanf("%d",&*a[i]);
+  scanf("%d",&a[i]);
  } 
 int sumarray(int *a,num)
 {

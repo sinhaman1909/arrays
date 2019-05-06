@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void inputarray(int *a,int num)
+{
+  int i;
+  for(i=0;i<num;i++)
+  scanf("%d",&*a[i]);
+ } 
+int sumarray(int *a,num)
+{
+   int s=0,i;
+   for(i=o;i<num;i++)
+     s=s+a[i];
+   return s;
+}   
+void outputarray(int *a,num);
+{
+  int i;
+  printf("\nThe output of the array is : \n");
+  for(i=0;i<num;i++)
+   printf("%d ",a[i]);
+}  
+main()
+{
+   int arr[],n,i,sum;
+   printf("Enter the no. of elements\n");
+   scanf("%d",&n);
+   intputarray(arr,n);
+   sum=sumarray(arr,n);
+   printf("\nThe sum of the n elements is %d",sum);
+   outputarray(arr,n);
+   getch();
+}   

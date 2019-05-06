@@ -15,19 +15,19 @@ int sumarray(int *a,num)
 }   
 void outputarray(int *a,num);
 {
-  int i;
+  int i,sum;
   printf("\nThe output of the array is : \n");
   for(i=0;i<num;i++)
-   printf("%d ",a[i]);
-}  
+   printf("%d ",a[i]); 
+  sum=sumarray(arr,n);
+  printf("\nThe sum of the n elements is %d",sum);
+} 
 main()
 {
-   int arr[],n,i,sum;
+   int arr[],n;
    printf("Enter the no. of elements\n");
    scanf("%d",&n);
    intputarray(arr,n);
-   sum=sumarray(arr,n);
-   printf("\nThe sum of the n elements is %d",sum);
    outputarray(arr,n);
    getch();
 }   
